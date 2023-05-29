@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Popular.css";
+import "./upcomming.css";
 import { MdNotificationsNone, MdPerson } from "react-icons/md";
 import axios from "axios";
 import { Outlet, Link,useLocation } from "react-router-dom";
@@ -14,7 +14,7 @@ export default function Home(props) {
   console.log(propsData);
 
     await axios
-      .get("https://api.jikan.moe/v4/top/anime")
+      .get("https://api.jikan.moe/v4/seasons/upcoming")
       .then((response) => {
         setAnime(response.data.data);
       })
@@ -35,7 +35,7 @@ export default function Home(props) {
           {" "}
           <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Orient_Anime_Logo.png" />
         </span>
-            <div className="nav-element">
+        <div className="nav-element">
           <span>
             {" "}
             <Link style={{ textDecoration: "none", color: "inherit" }} to="/">

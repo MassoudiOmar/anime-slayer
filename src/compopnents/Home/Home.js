@@ -9,16 +9,19 @@ export default function Home() {
   const [anime, setAnime] = useState();
   const [search, setSearch] = useState();
 
-  const filterData = async() => {
+
+
+
+  const filterData = async () => {
     await axios
-    .get(`https://api.jikan.moe/v4/anime?q=${search}&sfw`)
-    .then((response) => {
-      setAnime(response.data.data);
-      console.log(response.data.data,'dce');
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+      .get(`https://api.jikan.moe/v4/anime?q=${search}&sfw`)
+      .then((response) => {
+        setAnime(response.data.data);
+        console.log(response.data.data, "dce");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   const getAnime = async () => {
@@ -26,17 +29,16 @@ export default function Home() {
       .get("https://api.jikan.moe/v4/anime")
       .then((response) => {
         setAnime(response.data.data);
-        console.log(response.data.data,'dce');
+        console.log(response.data.data, "dce");
       })
       .catch((err) => {
         console.log(err);
       });
   };
 
-
   useEffect(() => {
-    search?.length>0?filterData():getAnime()
-  }, [anime,search]);
+    search?.length > 0 ? filterData() : getAnime();
+  }, [anime, search]);
 
   return (
     <div>
@@ -46,10 +48,36 @@ export default function Home() {
           <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Orient_Anime_Logo.png" />
         </span>
         <div className="nav-element">
-          <span> <Link style={{ textDecoration: "none", color: "inherit" }} to="/">Home</Link></span>
-          <span> <Link style={{ textDecoration: "none", color: "inherit" }} to="/Popular">Popular</Link></span>
-          <span> <Link style={{ textDecoration: "none", color: "inherit" }} to="/Manga">Manga</Link></span>
-          <span>Help</span>
+          <span>
+            {" "}
+            <Link style={{ textDecoration: "none", color: "inherit" }} to="/">
+              Home
+            </Link>
+          </span>
+          <span>
+            {" "}
+            <Link
+              style={{ textDecoration: "none", color: "inherit" }}
+              to="/Popular"
+            >
+              Popular
+            </Link>
+          </span>
+          <span>
+            {" "}
+            <Link
+              style={{ textDecoration: "none", color: "inherit" }}
+              to="/Manga"
+            >
+              Manga
+            </Link>
+          </span>
+          <span> <Link
+              style={{ textDecoration: "none", color: "inherit" }}
+              to="/Up Coming"
+            >
+              Up Coming
+            </Link></span>
         </div>
         <div className="nav-element2">
           <span>
@@ -74,11 +102,14 @@ export default function Home() {
         <div className="card">
           {anime?.map((e, i) => {
             return (
-              
-              <div  className="anime-list" key={i}> 
-                <Link style={{ textDecoration: "none", color: "inherit" }} to="/Details" state={{id:e.mal_id,gender:"anime"}}>
-                <img src={e.images.jpg.image_url} />
-                    </Link>
+              <div className="anime-list" key={i}>
+                <Link
+                  style={{ textDecoration: "none", color: "inherit" }}
+                  to="/Details"
+                  state={{ id: e.mal_id, gender: "anime" }}
+                >
+                  <img src={e.images.jpg.image_url} />
+                </Link>
                 <div className="title-status">
                   <p className="title">
                     {e.title.length > 10

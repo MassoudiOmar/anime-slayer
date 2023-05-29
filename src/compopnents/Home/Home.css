@@ -1,5 +1,5 @@
 .nav-container {
-  background-color: #f4f4f4;
+  background-color: #dd1d1d;
   display: flex;
   align-items: center;
   padding: 20px;
@@ -24,6 +24,7 @@
   display: inline;
   font-family: cursive;
   margin-right: 30px;
+  
 }
 
 .nav-element span:hover {
@@ -94,7 +95,6 @@
   width: 100%;
   height: 330px;
   border-radius: 5px;
-  margin-bottom: 10px;
 }
 
 .card .title {
@@ -117,128 +117,63 @@
   align-items: center;
 }
 
-@media screen and (max-width: 980px) {
-  .search-input {
-    display: none;
-  }
-}
-@media screen and (max-width: 900px) {
-  .logo img {
-    height: 50px;
-    width: 120px;
-  }
-  .nav-element {
-    font-size: 20px;
-  }
-  .nav-element2 {
-    font-size: 20px;
-  }
-  .search {
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 900px) {
-  .logo img {
-    height: 50px;
-    width: 110px;
-  }
-  .nav-element {
-    font-size: 18px;
-  }
-  .nav-element2 {
-    font-size: 18px;
-  }
-  .search {
-    font-size: 18px;
-  }
-}
 
-@media screen and (max-width: 600px) {
-  .logo img {
-    height: 38px;
-    width: 100px;
-  }
-  .nav-element {
-    font-size: 15px;
-    flex: 0.4;
-  }
-  .nav-element2 {
-    font-size: 15px;
-  }
-  .search {
-    font-size: 15px;
-  }
-  .nav-element span {
-    margin-right: 20px;
-  }
-  .nav-element2 span {
-    margin-right: 15px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .nav-container {
-    width: auto;
-  }
-  .anime-list {
-    flex-basis: calc(10% - 20px);
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  .logo img {
-    height: 35px;
-    width: 80px;
-  }
-  .nav-element {
-    font-size: 13px;
-    flex: 0.3;
-  }
-  .nav-element2 {
-    font-size: 13px;
-  }
-  .search {
-    font-size: 13px;
-  }
-  .nav-element span {
-    margin-right: 10px;
-  }
-  .nav-element2 span {
-    margin-right: 10px;
-  }
-}
 
 @media screen and (max-width: 400px) {
   .nav-container {
-    width: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 20px;
   }
-  .logo img {
-    height: 30px;
-    width: 70px;
-  }
-  .anime-list {
-    flex-basis: calc(10% - 20px);
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+
   .nav-element {
-    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  .nav-element span{
+    text-align: center;
+    font-size: small;
   }
   .nav-element2 {
+    display: none;
+  }
+
+  .logo img {
+    margin-bottom: 10px;
+    display: none;
+  }
+
+  .search {
+    flex: 1;
+    margin-top: 10px;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .anime-list {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card img {
+    height: 100px;
+  }
+
+  .card .title {
+    font-size: 14px;
+  }
+
+  .card .duration {
     font-size: 12px;
   }
-  .search {
-    font-size: 10px;
-  }
-  .nav-element span {
-    margin-right: 10px;
-  }
-  .nav-element2 span {
-    margin-right: 8px;
+
+  .status {
+    font-size: 12px;
   }
 }
