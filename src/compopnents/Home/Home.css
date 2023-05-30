@@ -262,10 +262,10 @@ body {
   .nav-element {
     margin-bottom: 10px;
     text-align: center;
-    flex: 1;
+    flex: 1.5;
   }
   .nav-element span {
-    font-size: 67%;
+    font-size: 60%;
     margin-right: 5px;
   }
 
@@ -279,7 +279,8 @@ body {
   }
 
   .search-input {
-    flex: 0.4;
+    flex: 0.3;
+    height: 14px;
   }
 
   .anime-list {
