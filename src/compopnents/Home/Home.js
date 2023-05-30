@@ -37,7 +37,7 @@ export default function Home() {
   };
 
   useEffect(() => {
-    search?.length > 0 ? filterData() : getAnime();
+    search?.length > 3 ? filterData() : getAnime();
   }, [anime, search]);
 
   return (
