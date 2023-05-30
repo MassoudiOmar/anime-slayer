@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .nav-container {
   background-color: #f4f4f4;
   display: flex;
@@ -22,7 +27,7 @@
 }
 .nav-element span {
   display: inline;
-  font-family: cursive;
+
   margin-right: 30px;
 }
 
@@ -53,18 +58,6 @@
   border: none;
   font-size: 16px;
 }
-.search-input {
-  border: none;
-  border-radius: 20px;
-  font-family: cursive;
-  color: rgb(4, 59, 61);
-}
-.search-input::placeholder {
-  font-family: cursive;
-  font-size: medium;
-  margin-left: 10px;
-}
-
 .main-Detail {
   background-color: rgba(131, 129, 127, 0.571);
   justify-content: center;
@@ -99,7 +92,7 @@
   text-align: justify;
   font-size: 16px;
   font-weight: bold;
-  font-family: cursive;
+
   margin-bottom: 10px;
   color: #888;
 }
@@ -107,14 +100,14 @@
   text-align: justify;
   font-size: 16px;
   font-weight: bold;
-  font-family: cursive;
+
   margin-bottom: 10px;
   color: #888;
   display: none;
 }
 select {
   display: inline;
-  font-family: cursive;
+
   margin-right: 30px;
   padding: 10px;
   font-size: 19px;
@@ -127,7 +120,7 @@ select {
 }
 select:hover {
   display: inline;
-  font-family: cursive;
+
   margin-right: 30px;
   padding: 10px;
   font-size: 19px;
@@ -146,14 +139,14 @@ option {
 .synopsiss {
   font-size: 16px;
   font-weight: bold;
-  font-family: cursive;
+
   color: #4e4249;
 }
 
 .anime-title {
   font-size: 20px;
   font-weight: bold;
-  font-family: cursive;
+
   margin-bottom: 10px;
 }
 
@@ -222,9 +215,7 @@ option {
 .rec {
   font-size: 16px;
   font-weight: bold;
-  font-family: cursive;
 }
-
 
 @media screen and (max-width: 900px) {
   .nav-container {
@@ -250,8 +241,6 @@ option {
     display: none;
   }
 
- 
-
   .card-Detail {
     display: flex;
     flex-wrap: wrap;
@@ -267,7 +256,6 @@ option {
     box-shadow: none;
   }
 
- 
   .card-Detail img {
     border-radius: 3px 0px 0px 3px;
     height: 300px;
@@ -275,7 +263,6 @@ option {
   .card-rec {
     width: 100%;
   }
-
 
   .synopsis-div {
     border: 0.2px solid;
@@ -302,7 +289,7 @@ option {
   .synopsiss {
     font-size: 10px;
     font-weight: bold;
-    font-family: cursive;
+
     color: #4e4249;
   }
 
@@ -332,9 +319,7 @@ option {
     font-size: 14px;
     font-weight: bold;
   }
-  
 }
-
 
 @media screen and (max-width: 500px) {
   .nav-container {
@@ -360,8 +345,6 @@ option {
     display: none;
   }
 
- 
-
   .card-Detail {
     display: flex;
     flex-wrap: wrap;
@@ -377,7 +360,6 @@ option {
     box-shadow: none;
   }
 
- 
   .card-Detail img {
     border-radius: 3px 0px 0px 3px;
     height: 160px;
@@ -385,7 +367,6 @@ option {
   .card-rec {
     width: 100%;
   }
-
 
   .synopsis-div {
     border: 0.2px solid;
@@ -412,7 +393,7 @@ option {
   .synopsiss {
     font-size: 10px;
     font-weight: bold;
-    font-family: cursive;
+
     color: #4e4249;
   }
 
@@ -442,5 +423,4 @@ option {
     font-size: 14px;
     font-weight: bold;
   }
-  
 }

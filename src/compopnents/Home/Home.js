@@ -41,7 +41,7 @@ export default function Home() {
   }, [anime, search]);
 
   return (
-    <div>
+    <div className="all">
       <div className="nav-container">
         <span className="logo">
           {" "}
@@ -79,14 +79,13 @@ export default function Home() {
               Up Coming
             </Link></span>
         </div>
-        <div className="nav-element2">
-          <span>
-            <input
+        <input
               className="search-input"
               onChange={(e) => setSearch(e.target.value)}
               placeholder="  search..."
             />
-          </span>
+        <div className="nav-element2">
+         
           <span className="search">
             <BiSearch />
           </span>
