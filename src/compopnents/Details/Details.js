@@ -214,7 +214,7 @@ export default function Home(props) {
                 <div className="title-recommendation">
                   <p className="title-rec">
                     {e?.entry?.title?.length > 10
-                      ? e?.entry.title.substring(0, 14) + "..."
+                      ? e?.entry.title.substring(0, 10) + "..."
                       : e?.entry.title}
                   </p>
                 </div>
