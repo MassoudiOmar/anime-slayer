@@ -1,0 +1,44 @@
+[debug] [2023-05-30T01:01:31.754Z] ----------------------------------------------------------------------
+[debug] [2023-05-30T01:01:31.756Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\masso\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2023-05-30T01:01:31.756Z] CLI Version:   12.2.1
+[debug] [2023-05-30T01:01:31.757Z] Platform:      win32
+[debug] [2023-05-30T01:01:31.757Z] Node Version:  v18.12.1
+[debug] [2023-05-30T01:01:31.757Z] Time:          Tue May 30 2023 02:01:31 GMT+0100 (Central European Standard Time)
+[debug] [2023-05-30T01:01:31.757Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-30T01:01:31.821Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-30T01:01:31.821Z] > authorizing via signed-in user (massoudiomar54321@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\masso\OneDrive\Bureau\anime slayer
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-05-30T01:01:34.299Z] Using project from CLI flag: anime-slayer-87ffc
+[debug] [2023-05-30T01:01:34.302Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/anime-slayer-87ffc [none]
+[debug] [2023-05-30T01:01:34.819Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/anime-slayer-87ffc 200
+[debug] [2023-05-30T01:01:34.819Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/anime-slayer-87ffc {"projectId":"anime-slayer-87ffc","projectNumber":"710418090068","displayName":"Anime slayer","name":"projects/anime-slayer-87ffc","resources":{"hostingSite":"anime-slayer-87ffc"},"state":"ACTIVE","etag":"1_c3601ca8-4089-41cc-9a5a-51193cadc381"}
+[info] i  Using project anime-slayer-87ffc (Anime slayer) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

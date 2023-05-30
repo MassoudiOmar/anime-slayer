@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./Tips.css";
 import { BiSearch } from "react-icons/bi";
 import { MdNotificationsNone, MdPerson } from "react-icons/md";
 import { Outlet, Link } from "react-router-dom";

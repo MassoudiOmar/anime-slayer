@@ -9,12 +9,13 @@ export default function Home(props) {
   const [animeRelations, setAnimeRelations] = useState();
   const [animeRecommendation, setAnimeRecommendation] = useState();
   const [ids, setIds] = useState();
+  const [show, setShow] = useState(false);
 
   const location = useLocation();
   const propsData = location.state;
 
-  var [gender,setGender] =useState(propsData.gender)
-  var [id,setMalId] =useState(propsData.id)
+  var [gender, setGender] = useState(propsData.gender);
+  var [id, setMalId] = useState(propsData.id);
 
   const getAnime = async () => {
     await axios
@@ -100,12 +101,15 @@ export default function Home(props) {
               Manga
             </Link>
           </span>
-          <span> <Link
+          <span>
+            {" "}
+            <Link
               style={{ textDecoration: "none", color: "inherit" }}
               to="/Up Coming"
             >
               Up Coming
-            </Link></span>
+            </Link>
+          </span>
         </div>
         <div className="nav-element2">
           <span>
@@ -123,7 +127,7 @@ export default function Home(props) {
           </div>
           <div className="details">
             <span className="anime-title">{anime?.title}</span>
-            <span className="synopsis">{anime?.synopsis}</span>
+            <span className="synopsis"> {anime?.synopsis}</span>
             {propsData.gender == "anime" ? (
               <span className="synopsiss">
                 Release date: {anime?.aired?.string}
@@ -137,9 +141,24 @@ export default function Home(props) {
             <span className="synopsiss">{anime?.duration}</span>
             <span className="synopsiss">{anime?.year}</span>
             {anime?.genres.map((e, i) => {
-              return <span className="synopsiss" key={i}>{e?.name}</span>;
+              return (
+                <span className="synopsiss" key={i}>
+                  {e?.name}
+                </span>
+              );
             })}
           </div>
+        </div>
+        <div className="synopsis-div" onClick={()=>setShow(!show)}>
+          {!show ? (
+            <span className="synopsis2" onClick={()=>setShow(!show)}>
+              {anime?.synopsis.substring(0, 150) + "..."}
+            </span>
+          ) : (
+            <span className="synopsis2" onClick={()=>setShow(!show)}>
+              {anime?.synopsis}
+            </span>
+          )}
         </div>
       </div>
       {animeRelations?.length > 0 ? (
@@ -156,7 +175,7 @@ export default function Home(props) {
                 <div className="title-recommendation">
                   <p className="title-rec">
                     {e?.title?.length > 10
-                      ? e?.title.substring(0, 20) + "..."
+                      ? e?.title.substring(0, 10) + "..."
                       : e?.title}
                   </p>
                 </div>
@@ -187,15 +206,15 @@ export default function Home(props) {
                   className="image-rec"
                   src={e.entry?.images?.jpg.image_url}
                   onClick={() => {
-                    setGender(gender)
-                    setMalId(e.entry.mal_id)
+                    setGender(gender);
+                    setMalId(e.entry.mal_id);
                   }}
                 />
 
                 <div className="title-recommendation">
                   <p className="title-rec">
                     {e?.entry?.title?.length > 10
-                      ? e?.entry.title.substring(0, 20) + "..."
+                      ? e?.entry.title.substring(0, 14) + "..."
                       : e?.entry.title}
                   </p>
                 </div>

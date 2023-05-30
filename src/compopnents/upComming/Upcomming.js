@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./upcomming.css";
 import { MdNotificationsNone, MdPerson } from "react-icons/md";
 import axios from "axios";
 import { Outlet, Link,useLocation } from "react-router-dom";

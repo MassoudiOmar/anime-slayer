@@ -96,12 +96,21 @@
   margin-top: 10px;
 }
 .synopsis {
-  text-align:justify;
+  text-align: justify;
   font-size: 16px;
   font-weight: bold;
   font-family: cursive;
   margin-bottom: 10px;
   color: #888;
+}
+.synopsis2 {
+  text-align: justify;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: cursive;
+  margin-bottom: 10px;
+  color: #888;
+  display: none;
 }
 select {
   display: inline;
@@ -113,7 +122,8 @@ select {
   background-color: rgb(0, 38, 134);
   color: #fff;
   cursor: pointer;
-  border: none;appearance: none;
+  border: none;
+  appearance: none;
 }
 select:hover {
   display: inline;
@@ -128,7 +138,6 @@ select:hover {
 
 /* Style the option elements */
 option {
- 
   width: 33.33%; /* Set the width to display three options per line */
   box-sizing: border-box;
   background-color: rgb(0, 38, 134);
@@ -214,4 +223,224 @@ option {
   font-size: 16px;
   font-weight: bold;
   font-family: cursive;
+}
+
+
+@media screen and (max-width: 900px) {
+  .nav-container {
+    padding: 10px;
+    display: flex;
+  }
+  .logo img {
+    width: 62px;
+    height: 30px;
+    flex: 1;
+  }
+  .nav-element {
+    margin-bottom: 10px;
+    text-align: center;
+    flex: 1;
+  }
+  .nav-element span {
+    font-size: 100%;
+    margin-right: 5px;
+  }
+
+  .nav-element2 {
+    display: none;
+  }
+
+ 
+
+  .card-Detail {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .anime-list-Detail {
+    width: 32%;
+    padding: 1px;
+    border-radius: 0px;
+    margin-top: 5px;
+    border: #fff;
+    box-shadow: none;
+  }
+
+ 
+  .card-Detail img {
+    border-radius: 3px 0px 0px 3px;
+    height: 300px;
+  }
+  .card-rec {
+    width: 100%;
+  }
+
+
+  .synopsis-div {
+    border: 0.2px solid;
+    background-color: aliceblue;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 7%;
+
+    width: 96%;
+    margin-left: 6px;
+  }
+  .synopsis {
+    font-size: 10px;
+    justify-content: inherit;
+    display: none;
+  }
+  .synopsis2 {
+    font-size: 10px;
+    justify-content: inherit;
+    display: inline;
+    margin-left: 2px;
+  }
+
+  .synopsiss {
+    font-size: 10px;
+    font-weight: bold;
+    font-family: cursive;
+    color: #4e4249;
+  }
+
+  .anime-recomendation {
+    margin-left: 4px;
+    width: 50%;
+    margin-bottom: 0px;
+    padding: 1px;
+    border-radius: 0px;
+    margin-top: 5px;
+    box-shadow: none;
+  }
+  .image-rec {
+    border-radius: 3px 0px 0px 3px;
+    height: 160px;
+    width: auto;
+    margin-bottom: 0px;
+  }
+  .title-recommendation {
+    display: flex;
+    height: 42px;
+
+    align-items: center;
+    text-align: center;
+  }
+  .title-rec {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+}
+
+
+@media screen and (max-width: 500px) {
+  .nav-container {
+    padding: 10px;
+    display: flex;
+  }
+  .logo img {
+    width: 62px;
+    height: 30px;
+    flex: 1;
+  }
+  .nav-element {
+    margin-bottom: 10px;
+    text-align: center;
+    flex: 1;
+  }
+  .nav-element span {
+    font-size: 67%;
+    margin-right: 5px;
+  }
+
+  .nav-element2 {
+    display: none;
+  }
+
+ 
+
+  .card-Detail {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .anime-list-Detail {
+    width: 32%;
+    padding: 1px;
+    border-radius: 0px;
+    margin-top: 5px;
+    border: #fff;
+    box-shadow: none;
+  }
+
+ 
+  .card-Detail img {
+    border-radius: 3px 0px 0px 3px;
+    height: 160px;
+  }
+  .card-rec {
+    width: 100%;
+  }
+
+
+  .synopsis-div {
+    border: 0.2px solid;
+    background-color: aliceblue;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 7%;
+
+    width: 96%;
+    margin-left: 6px;
+  }
+  .synopsis {
+    font-size: 10px;
+    justify-content: inherit;
+    display: none;
+  }
+  .synopsis2 {
+    font-size: 10px;
+    justify-content: inherit;
+    display: inline;
+    margin-left: 2px;
+  }
+
+  .synopsiss {
+    font-size: 10px;
+    font-weight: bold;
+    font-family: cursive;
+    color: #4e4249;
+  }
+
+  .anime-recomendation {
+    margin-left: 4px;
+    width: 50%;
+    margin-bottom: 0px;
+    padding: 1px;
+    border-radius: 0px;
+    margin-top: 5px;
+    box-shadow: none;
+  }
+  .image-rec {
+    border-radius: 3px 0px 0px 3px;
+    height: 160px;
+    width: auto;
+    margin-bottom: 0px;
+  }
+  .title-recommendation {
+    display: flex;
+    height: 42px;
+
+    align-items: center;
+    text-align: center;
+  }
+  .title-rec {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
 }
