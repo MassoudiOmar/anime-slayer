@@ -316,8 +316,3 @@ body {
     height: 30px;
   }
 }
-@media screen and (max-width: 400px) {
-  .search-input {
-    display: none;
-  }
-}
