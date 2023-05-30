@@ -323,8 +323,8 @@ option {
     display: flex;
   }
   .logo img {
-    width: 62px;
-    height: 30px;
+    width: 60px;
+    height: 28px;
     flex: 1;
   }
   .nav-element {
@@ -333,7 +333,7 @@ option {
     flex: 1;
   }
   .nav-element span {
-    font-size: 67%;
+    font-size: 52%;
     margin-right: 5px;
   }
 

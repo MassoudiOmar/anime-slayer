@@ -35,10 +35,36 @@ export default function Home(props) {
           <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Orient_Anime_Logo.png" />
         </span>
         <div className="nav-element">
-          <span><Link style={{ textDecoration: "none", color: "inherit" }} to="/">Home</Link></span>
-          <span>Popular</span>
-          <span> <Link style={{ textDecoration: "none", color: "inherit" }} to="/Manga">Manga</Link></span>
-          <span>Help</span>
+          <span>
+            {" "}
+            <Link style={{ textDecoration: "none", color: "inherit" }} to="/">
+              Home
+            </Link>
+          </span>
+          <span>
+            {" "}
+            <Link
+              style={{ textDecoration: "none", color: "inherit" }}
+              to="/Popular"
+            >
+              Popular
+            </Link>
+          </span>
+          <span>
+            {" "}
+            <Link
+              style={{ textDecoration: "none", color: "inherit" }}
+              to="/Manga"
+            >
+              Manga
+            </Link>
+          </span>
+          <span> <Link
+              style={{ textDecoration: "none", color: "inherit" }}
+              to="/Up Coming"
+            >
+              Up Coming
+            </Link></span>
         </div>
         <div className="nav-element2">
           <span>

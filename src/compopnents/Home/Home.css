@@ -210,6 +210,10 @@ body {
   .nav-element2 {
     display: none;
   }
+  .search-input::placeholder {
+    font-size: small;
+    margin-left: 10px;
+  }
 
   .anime-list {
     width: 32%;
@@ -255,8 +259,8 @@ body {
     display: flex;
   }
   .logo img {
-    width: 62px;
-    height: 30px;
+    width: 60px;
+    height: 28px;
     flex: 1;
   }
   .nav-element {
@@ -265,10 +269,13 @@ body {
     flex: 1.5;
   }
   .nav-element span {
-    font-size: 60%;
+    font-size: 52%;
     margin-right: 5px;
   }
-
+  .search-input::placeholder {
+    font-size: xx-small;
+    margin-left: 10px;
+  }
   .nav-element2 span {
     display: none;
   }
