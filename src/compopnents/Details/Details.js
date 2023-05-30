@@ -152,7 +152,7 @@ export default function Home(props) {
         <div className="synopsis-div" onClick={()=>setShow(!show)}>
           {!show ? (
             <span className="synopsis2" onClick={()=>setShow(!show)}>
-              {anime?.synopsis.substring(0, 150) + "..."}
+              {anime?.synopsis?.substring(0, 150) + "..."}
             </span>
           ) : (
             <span className="synopsis2" onClick={()=>setShow(!show)}>

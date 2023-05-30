@@ -85,8 +85,8 @@ export default function Home(props) {
                     </Link>
                 <div className="title-status">
                   <p className="title">
-                    {e.title.length > 10
-                      ? e.title.substring(0, 10) + "..."
+                    {e.title.length > 100000
+                      ? e.title?.substring(0, 10) + "..."
                       : e.title}
                   </p>
                   <p className="status">{e.status}</p>
