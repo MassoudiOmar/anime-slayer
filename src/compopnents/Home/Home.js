@@ -91,13 +91,7 @@ export default function Home() {
           </span>
           <span>
 <MdNotificationsNone onClick={() =>
-  fetch('https://cnopt.vercel.app/api/pharmacienLogin')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-      }
-      return response.json();
-    })
+  axios.post('https://cnopt.vercel.app/api/pharmacienLogin')
     .then(data => console.log(data))
     .catch(error => console.error('Error:', error))
 } />
