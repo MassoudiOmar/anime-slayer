@@ -90,8 +90,19 @@ export default function Home() {
             <BiSearch />
           </span>
           <span>
-            <MdNotificationsNone />
-          </span>
+<MdNotificationsNone onClick={() =>
+  fetch('https://cnopt.vercel.app/api/pharmacienLogin')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(data => console.log(data))
+    .catch(error => console.error('Error:', error))
+} />
+
+                </span>
           <span>
             <MdPerson />
           </span>
